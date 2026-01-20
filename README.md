@@ -1,6 +1,6 @@
 # Application de Gestion de Réservations de Véhicules – Lux Drive
 
-![Logo Lux Drive](public/images/img(1).png)
+![Logo Lux Drive](./public/images/img(1).png)
 
 
 ## Contexte de l’application
