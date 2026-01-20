@@ -55,7 +55,12 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 ### Authentification
 
-![Capture d'écran 2](public/images/img (2).png)
+<img src="/public/images/login.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/register.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/forgot.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/welcome.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/welcome-connected.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/dashboard.png" alt="Lux Drive Logo" width="120" />
 
 - Inscription et connexion des utilisateurs
 - Authentification à deux facteurs (2FA)
@@ -63,7 +68,8 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 ### Gestion des véhicules
 
-![Capture d'écran 3](public/images/img (3).png)
+<img src="/public/images/vehicles.png" alt="Lux Drive Logo" width="120" />
+
 
 - Liste des véhicules disponibles
 - Recherche et filtrage par disponibilité
@@ -74,7 +80,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 #### Création
 
-![Capture d'écran 4](public/images/img (4).png)
+<img src="/public/images/create-reservation.png" alt="Lux Drive Logo" width="120" />
 
 - Sélection d’un véhicule disponible
 - Choix des dates de début et de fin
@@ -83,7 +89,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 #### Consultation
 
-![Capture d'écran 5](public/images/img (5).png)
+<img src="/public/images/detail-reservation.png" alt="Lux Drive Logo" width="120" />
 
 - Liste des réservations de l’utilisateur
 - Affichage détaillé d’une réservation
@@ -91,20 +97,21 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 #### Modification
 
-![Capture d'écran 6](public/images/img (6).png)
+<img src="/public/images/test1.png" alt="Lux Drive Logo" width="120" />
+
 
 - Modification des dates et de la raison
 - Revalidation automatique des conflits
 
 #### Annulation
 
-![Capture d'écran 7](public/images/img (7).png)
 
 - Annulation possible par le propriétaire avant le début effectif
 
 ### Statuts de réservation
 
-![Capture d'écran 8](public/images/img (8).png)
+<img src="/public/images/reservations.png" alt="Lux Drive Logo" width="120" />
+
 
 
 - **En attente** : La réservation est en attente de confirmation.
@@ -116,6 +123,8 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 ---
 
 ## Règles métier critiques
+<img src="/public/images/test2.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/test3.png" alt="Lux Drive Logo" width="120" />
 
 1. **Prévention des chevauchements**
    - Un véhicule ne peut pas être réservé si une autre réservation (en attente ou confirmée) existe sur la même période.
@@ -129,6 +138,13 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
    - Les utilisateurs ne peuvent consulter et modifier que leurs propres réservations.
    - Authentification obligatoire pour toutes les actions.
    - Protection CSRF intégrée.
+
+
+
+<img src="/public/images/settings1.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/settings2.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/settings3.png" alt="Lux Drive Logo" width="120" />
+
 
 ---
 
@@ -316,21 +332,7 @@ Protection contre les injections SQL via Eloquent ORM
 <!-- ===================================================== --> <!-- ÉVOLUTIONS FUTURES --> <!-- ===================================================== -->
 Améliorations futures possibles
 
-![Capture d'écran 9](public/images/img (9).png)
 
-![Capture d'écran 10](public/images/img (10).png)
-
-![Capture d'écran 11](public/images/img (11).png)
-
-![Capture d'écran 12](public/images/img (12).png)
-
-![Capture d'écran 13](public/images/img (13).png)
-
-![Capture d'écran 14](public/images/img (14).png)
-
-![Capture d'écran 15](public/images/img (15).png)
-
-![Capture d'écran 16](public/images/img (16).png)
 
 <!-- Fonctionnalités non implémentées mais envisagées -->
 
