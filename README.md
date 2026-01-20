@@ -60,7 +60,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 <img src="/public/images/forgot.png" alt="Lux Drive Logo" width="120" />
 <img src="/public/images/welcome.png" alt="Lux Drive Logo" width="120" />
 <img src="/public/images/welcome-connected.png" alt="Lux Drive Logo" width="700" />
-<img src="/public/images/dashboard.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/dashboard.png" alt="Lux Drive Logo" width="1200" />
 
 - Inscription et connexion des utilisateurs
 - Authentification à deux facteurs (2FA)
