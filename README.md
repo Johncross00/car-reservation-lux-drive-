@@ -1,7 +1,7 @@
 # Application de Gestion de Réservations de Véhicules – Lux Drive
 
 <p align="center">
-    <img src="/public/images/lux-drive-logo.png" alt="Lux Drive Logo" width="120" />
+    <img src="/public/images/lux-drive-logo.png" alt="Lux Drive Logo" width="320" />
 </p>
 
 
@@ -55,12 +55,12 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 ### Authentification
 
-<img src="/public/images/login.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/register.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/forgot.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/welcome.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/welcome-connected.png" alt="Lux Drive Logo" width="700" />
-<img src="/public/images/dashboard.png" alt="Lux Drive Logo" width="1200" />
+<img src="/public/images/login.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/register.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/forgot.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/welcome.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/welcome-connected.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/dashboard.png" alt="Lux Drive Logo" width="1500" />
 
 - Inscription et connexion des utilisateurs
 - Authentification à deux facteurs (2FA)
@@ -80,7 +80,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 #### Création
 
-<img src="/public/images/create-reservation.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/create-reservation.png" alt="Lux Drive Logo" width="1500" />
 
 - Sélection d’un véhicule disponible
 - Choix des dates de début et de fin
@@ -89,7 +89,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 #### Consultation
 
-<img src="/public/images/detail-reservation.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/detail-reservation.png" alt="Lux Drive Logo" width="1500" />
 
 - Liste des réservations de l’utilisateur
 - Affichage détaillé d’une réservation
@@ -97,7 +97,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 #### Modification
 
-<img src="/public/images/test1.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/test1.png" alt="Lux Drive Logo" width="1500" />
 
 
 - Modification des dates et de la raison
@@ -110,7 +110,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 ### Statuts de réservation
 
-<img src="/public/images/reservations.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/reservations.png" alt="Lux Drive Logo" width="1500" />
 
 
 
@@ -123,8 +123,8 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 ---
 
 ## Règles métier critiques
-<img src="/public/images/test2.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/test3.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/test2.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/test3.png" alt="Lux Drive Logo" width="1500" />
 
 1. **Prévention des chevauchements**
    - Un véhicule ne peut pas être réservé si une autre réservation (en attente ou confirmée) existe sur la même période.
@@ -141,9 +141,9 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 
 
-<img src="/public/images/settings1.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/settings2.png" alt="Lux Drive Logo" width="120" />
-<img src="/public/images/settings3.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/settings1.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/settings2.png" alt="Lux Drive Logo" width="1500" />
+<img src="/public/images/settings3.png" alt="Lux Drive Logo" width="1500" />
 
 
 ---
