@@ -14,12 +14,12 @@ L’application a été conçue dans un contexte proche des contraintes réelles
 Les réservations suivent un **cycle de vie basé sur des statuts**, afin de refléter un processus métier réaliste et garantir l’intégrité des données.
 
 - Lorsqu’une réservation est créée, elle est placée dans l’état **En attente**.
-- Avant toute validation, le système vérifie automatiquement l’absence de conflits de disponibilité avec d’autres réservations existantes.
-- À la date de début de la période réservée, la réservation est automatiquement **confirmée** si aucune incohérence n’est détectée.
-- Une réservation peut être **annulée** par son propriétaire avant le début effectif de la période.
-- Une fois la période écoulée, la réservation est considérée comme **terminée**.
+- Si un conflit de disponibilité est détecté lors de la création ou de la modification, la réservation est immédiatement **Refusée**.
+- À la date de début de la période réservée, la réservation est automatiquement **Confirmée** par une tâche planifiée. Le véhicule est alors considéré comme indisponible.
+- Une réservation peut être **Annulée** par son propriétaire avant le début effectif de la période. Le véhicule redevient alors disponible.
+- Une fois la date de fin de la période écoulée, la réservation est automatiquement marquée comme **Terminée** par une tâche planifiée.
 
-Cette approche permet d’éviter les conflits de planning, de sécuriser l’accès aux véhicules et de représenter fidèlement un fonctionnement organisationnel réel.
+Cette approche garantit la cohérence des données, la gestion correcte des disponibilités et une expérience utilisateur conforme aux exigences réelles d’une application de gestion de ressources partagées.
 
 ---
 
@@ -80,10 +80,12 @@ Cette approche permet d’éviter les conflits de planning, de sécuriser l’ac
 - Annulation possible par le propriétaire avant le début effectif
 
 ### Statuts de réservation
-- **En attente**
-- **Confirmée**
-- **Annulée**
-- **Terminée**
+
+- **En attente** : La réservation est en attente de confirmation.
+- **Confirmée** : La réservation a débuté et le véhicule est en cours d'utilisation.
+- **Refusée** : La demande de réservation a été refusée en raison d'un conflit de disponibilité ou d'une incohérence.
+- **Annulée** : La réservation a été annulée par l'utilisateur avant son début.
+- **Terminée** : La période de réservation est écoulée.
 
 ---
 
@@ -107,40 +109,55 @@ Cette approche permet d’éviter les conflits de planning, de sécuriser l’ac
 ## Structure de l’application
 
 app/
+├── Console/
+│   └── Commands/
+│       └── UpdateReservationStatus.php
 ├── Http/
-│ ├── Controllers/
-│ │ ├── VehicleController.php
-│ │ └── ReservationController.php
-│ └── Requests/
-│ ├── StoreReservationRequest.php
-│ └── UpdateReservationRequest.php
+│   ├── Controllers/
+│   │   ├── DashboardController.php
+│   │   ├── VehicleController.php
+│   │   └── ReservationController.php
+│   └── Requests/
+│       ├── StoreReservationRequest.php
+│       └── UpdateReservationRequest.php
 ├── Models/
-│ ├── User.php
-│ ├── Vehicle.php
-│ └── Reservation.php
+│   ├── User.php
+│   ├── Vehicle.php
+│   └── Reservation.php
 database/
 ├── migrations/
-│ ├── create_vehicles_table.php
-│ └── create_reservations_table.php
+│   ├── create_vehicles_table.php
+│   └── create_reservations_table.php
 ├── factories/
-│ ├── VehicleFactory.php
-│ └── ReservationFactory.php
+│   ├── VehicleFactory.php
+│   └── ReservationFactory.php
 └── seeders/
-└── VehicleSeeder.php
+    ├── DatabaseSeeder.php
+    ├── VehicleSeeder.php
+    └── ReservationSeeder.php
 resources/js/
+├── Components/
+│   ├── AppLogo.vue
+│   └── AppSidebar.vue
+├── Layouts/
+│   └── Auth/
+│       └── AuthSimpleLayout.vue
 ├── Pages/
-│ ├── Vehicles/
-│ │ ├── Index.vue
-│ │ └── Show.vue
-│ └── Reservations/
-│ ├── Index.vue
-│ ├── Create.vue
-│ ├── Show.vue
-│ └── Edit.vue
+│   ├── Dashboard.vue
+│   ├── Vehicles/
+│   │   ├── Index.vue
+│   │   └── Show.vue
+│   └── Reservations/
+│       ├── Index.vue
+│       ├── Create.vue
+│       ├── Show.vue
+│       └── Edit.vue
+├── router.ts
 tests/
 ├── Feature/
-│ ├── VehicleTest.php
-│ └── ReservationTest.php
+│   ├── DashboardTest.php
+│   ├── VehicleTest.php
+│   └── ReservationTest.php
 
 
 ---
@@ -234,12 +251,25 @@ Email : test@example.com
 Mot de passe : password
 
 <!-- ===================================================== --> <!-- TESTS AUTOMATISÉS --> <!-- ===================================================== -->
-Tests
-<!-- Exécution de tous les tests unitaires et fonctionnels -->
+## Tests
 
-Exécuter l’ensemble des tests automatisés :
+Pour exécuter l’ensemble des tests automatisés (unitaires et fonctionnels) :
 
-php artisan test
+```bash
+php artisan test --compact
+```
+
+Pour exécuter les tests pour un fichier spécifique :
+
+```bash
+php artisan test --compact tests/Feature/DashboardTest.php
+```
+
+Pour filtrer les tests par nom (utile après avoir modifié un fichier lié) :
+
+```bash
+php artisan test --compact --filter="testName"
+```
 
 <!-- ===================================================== --> <!-- SÉCURITÉ --> <!-- ===================================================== -->
 Sécurité
