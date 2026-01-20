@@ -1,5 +1,8 @@
 # Application de Gestion de Réservations de Véhicules – Lux Drive
 
+![Logo Lux Drive](public/images/img (1).png)
+
+
 ## Contexte de l’application
 
 Lux Drive est une application web full-stack destinée à la gestion des réservations de véhicules au sein d’une organisation.  
@@ -49,11 +52,17 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 ## Fonctionnalités implémentées
 
 ### Authentification
+
+![Capture d'écran 2](public/images/img (2).png)
+
 - Inscription et connexion des utilisateurs
 - Authentification à deux facteurs (2FA)
 - Gestion sécurisée des sessions
 
 ### Gestion des véhicules
+
+![Capture d'écran 3](public/images/img (3).png)
+
 - Liste des véhicules disponibles
 - Recherche et filtrage par disponibilité
 - Pagination des résultats
@@ -62,24 +71,39 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 ### Gestion des réservations
 
 #### Création
+
+![Capture d'écran 4](public/images/img (4).png)
+
 - Sélection d’un véhicule disponible
 - Choix des dates de début et de fin
 - Indication de la raison de la réservation
 - Validation automatique des conflits de disponibilité
 
 #### Consultation
+
+![Capture d'écran 5](public/images/img (5).png)
+
 - Liste des réservations de l’utilisateur
 - Affichage détaillé d’une réservation
 - Visualisation du statut
 
 #### Modification
+
+![Capture d'écran 6](public/images/img (6).png)
+
 - Modification des dates et de la raison
 - Revalidation automatique des conflits
 
 #### Annulation
+
+![Capture d'écran 7](public/images/img (7).png)
+
 - Annulation possible par le propriétaire avant le début effectif
 
 ### Statuts de réservation
+
+![Capture d'écran 8](public/images/img (8).png)
+
 
 - **En attente** : La réservation est en attente de confirmation.
 - **Confirmée** : La réservation a débuté et le véhicule est en cours d'utilisation.
@@ -289,6 +313,23 @@ Protection contre les injections SQL via Eloquent ORM
 
 <!-- ===================================================== --> <!-- ÉVOLUTIONS FUTURES --> <!-- ===================================================== -->
 Améliorations futures possibles
+
+![Capture d'écran 9](public/images/img (9).png)
+
+![Capture d'écran 10](public/images/img (10).png)
+
+![Capture d'écran 11](public/images/img (11).png)
+
+![Capture d'écran 12](public/images/img (12).png)
+
+![Capture d'écran 13](public/images/img (13).png)
+
+![Capture d'écran 14](public/images/img (14).png)
+
+![Capture d'écran 15](public/images/img (15).png)
+
+![Capture d'écran 16](public/images/img (16).png)
+
 <!-- Fonctionnalités non implémentées mais envisagées -->
 
 Notifications par email pour les réservations
