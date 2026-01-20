@@ -56,6 +56,12 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 ### Authentification
 
 <img src="/public/images/login.png" alt="Lux Drive Logo" width="1500" />
+
+User:
+   email: john@john.com
+   password: jjjjjjjj
+
+
 <img src="/public/images/register.png" alt="Lux Drive Logo" width="1500" />
 <img src="/public/images/forgot.png" alt="Lux Drive Logo" width="1500" />
 <img src="/public/images/welcome.png" alt="Lux Drive Logo" width="1500" />
