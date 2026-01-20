@@ -68,7 +68,7 @@ Cette approche garantit la cohérence des données, la gestion correcte des disp
 
 ### Gestion des véhicules
 
-<img src="/public/images/vehicles.png" alt="Lux Drive Logo" width="120" />
+<img src="/public/images/vehicles.png" alt="Lux Drive Logo" width="1500" />
 
 
 - Liste des véhicules disponibles
