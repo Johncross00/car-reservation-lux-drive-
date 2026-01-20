@@ -1,7 +1,7 @@
 # Application de Gestion de Réservations de Véhicules – Lux Drive
 
 <p align="center">
-    <img src="/images/lux-drive-logo.png" alt="Lux Drive Logo" width="120" />
+    <img src="/public/images/lux-drive-logo.png" alt="Lux Drive Logo" width="120" />
 </p>
 
 
