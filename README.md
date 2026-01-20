@@ -335,7 +335,7 @@ Autorisation basée sur la propriété des ressources
 
 Protection contre les injections SQL via Eloquent ORM
 
-<!-- ===================================================== --> <!-- ÉVOLUTIONS FUTURES --> <!-- ===================================================== -->
+<!-- ============================ --> <!-- ÉVOLUTIONS FUTURES --> <!-- ========================================= -->
 Améliorations futures possibles
 
 
